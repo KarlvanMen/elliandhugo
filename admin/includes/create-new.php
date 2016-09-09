@@ -9,9 +9,6 @@
                 $valid_formats = array("jpg", "png", "gif", "zip", "bmp");                        
                 $path = "../../img/";
                 if(!empty($_POST)){
-
-                        echo '<pre>'; print_r($_POST["pied_title"]);echo "</pre>";
-                        echo '<pre>'; print_r($title);echo "</pre>";
                         
                         function test_input($data) {
                                 $data = trim($data);
@@ -26,14 +23,8 @@
                                 // check if title only contains letters and whitespace
                                 if (!preg_match("/^[a-zA-Z ]*$/",test_input($_POST["pied_title"]))) {
                                         $titleErr = "Only letters and white space allowed"; 
-                        echo '<pre>'; print_r($_POST["pied_title"]);echo "</pre>";
-                        echo '<pre>'; print_r($title);echo "</pre>";
                                 } else {
-                        echo '<pre>'; print_r($_POST["pied_title"]);echo "</pre>";
-                        echo '<pre>'; print_r($title);echo "</pre>";
                                         $title = test_input($_POST["pied_title"]);
-                        echo '<pre>'; print_r($_POST["pied_title"]);echo "</pre>";
-                        echo '<pre>'; print_r($title);echo "</pre>";
                                 }  
                         }
                         if (empty($_POST["pied_text"])) {
