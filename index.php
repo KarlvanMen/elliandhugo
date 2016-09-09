@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 
 <html lang="en">
@@ -147,3 +148,9 @@
                 <script src="js/script.js"></script>
         </body>
 </html>
+=======
+<?php
+	echo "st!";
+	echo "!!!";
+?>
+>>>>>>> st
