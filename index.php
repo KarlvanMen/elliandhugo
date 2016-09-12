@@ -99,7 +99,7 @@
 					<img class="produkts-top-main-img" src="img/'.$images[0].'"/>
 					<div class="produkts-top-img-container">';
 						foreach($images as $img){
-							echo '<img class="produkts-top-img" src="img/'.$img.'"/>';
+							echo '<div class="produkts-top-img" style="background-image:url(img/'.$img.');"></div>';
 						}
 				echo '</div></div>';
 				echo '<div class="produkts-top-right">
