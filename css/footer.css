@@ -1,0 +1,14 @@
+.social {
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	font-size: 3em;
+}
+.social li{
+	display: inline-block;
+}
+
+.fa{
+	padding: 0 7px;
+	color: #00aced;
+}
