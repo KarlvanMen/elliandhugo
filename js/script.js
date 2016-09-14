@@ -21,11 +21,7 @@ window.onload = function() {
         }
 
         for(var i = 0; i < images2.length; i++){
-                var imageURL = images2[i].
-                style.
-                backgroundImage.
-                replace(/url\((['"])?(.*?)\1\)/gi, '$2')
-                .split(',')[0];
+                var imageURL = images2[i].style.backgroundImage.replace(/url\((['"])?(.*?)\1\)/gi, '$2').split(',')[0];
                 var image = new Image();
                 image.src = imageURL;
 
@@ -35,12 +31,17 @@ window.onload = function() {
                 if(width/height > 1){
                         images2[i].className = "wider-image " + images2[i].className;
                 }
+
+                images2[i].onclick=function(){
+                        document.getElementById('main-img').src = this.style.backgroundImage.replace(/url\((['"])?(.*?)\1\)/gi, '$2').split(',')[0];
+                }
         }
 
         var menuList = document.getElementsByClassName('list');
         for(var i = 0; i < menuList.length; i++){
                 if(menuList[i].childNodes.length > 1){
                         menuList[i].childNodes[1].style.display = 'none';
+                        menuList[i].innerHTML += " +";
                         menuList[i].onclick=function(){
                                 if (this.childNodes[1].style.display == 'none') {
                                         this.childNodes[1].style.display = 'block';

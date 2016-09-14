@@ -4,27 +4,22 @@
 			<a href="#menu" class="box-shadow-menu" onclick="displayMenu()">Menu</a>
 		</main>
 		<nav id="menu_nav" data-show="false">
-			<li class="list">Home</li>
-			<li class="list">Occasion</li>
-			<li class="list">Wedding
+			<li class="list"><a href="/elliandhugo">Sākums</a></li>
+			<li class="list"><a href="/elliandhugo?cat=virtuvei&title=virtuvei">Virtuvei</a></li>
+			<li class="list"><a href="/elliandhugo?cat=dekori&title=dekori">Dekori</a></li>
+			<li class="list"><a href="/elliandhugo?cat=kazam&title=kāzām">Kāzām</a></li>
+			<li class="list"><a href="/elliandhugo?cat=kristibam&title=Kristībām">Kristībām</a></li>
+			<li class="list"><a href="/elliandhugo?cat=visi&title=visi">Visi produkti</a></li>
+			<li class="list"><a href="/elliandhugo?cat=popularakie&title=Popuklārākie">Popuklārākie</a></li>
+			<li class="list"><a href="/elliandhugo?page=aboutus&title=">Par mums</a></li>
+			<li class="list">Iepērcies pēc cenas
 				<ul class="sublist">
-					<li class="sublist-link">Reception</li>
-					<li class="sublist-link">mr & mrs signs</li>
-					<li class="sublist-link">table numbers</li>
-					<li class="sublist-link">photo probs</li>
-					<li class="sublist-link">chair signs</li>
-					<li class="sublist-link">guestbooks</li>
-					<li class="sublist-link">bridal party</li>
-					<li class="sublist-link">wedding gifts</li>
-					<li class="sublist-link">cake toppers</li>
+					<li class="sublist-link"><a href="/elliandhugo?cat=zem&tag=25&title=Zem 25€">Zem 25€</a></li>
+					<li class="sublist-link"><a href="/elliandhugo?cat=zem&tag=25-50&title=25€ - 50€">25€ - 50€</a></li>
+					<li class="sublist-link"><a href="/elliandhugo?cat=zem&tag=50-100&title=50€ - 100€">50€ - 100€</a></li>
+					<li class="sublist-link"><a href="/elliandhugo?cat=virs&tag=100&title=Virs 100€">Virs 100€</a></li>
 				</ul>
 			</li>
-			<li class="list">Gifts</li>
-			<li class="list">Shop All</li>
-			<li class="list">About us</li>
-			<li class="list">Shop by occasion</li>
-			<li class="list">popular</li>
-			<li class="list">shop by price</li>
 		</nav>
 	</div>
 </header>

@@ -48,6 +48,7 @@ function displayProduct($p, $path, $db){
 			<a href="http://localhost/elliandhugo/" title="Back to frontpage">Home</a>
 			<span aria-hidden="true" class="breadcrumb_sep">›</span>';
 			if(!empty($path)){
+				echo $path;
 				foreach($path as $tp){
 					echo '<a href="#" title="Back to '.$tp.'">'.$tp.'</a>
 					<span aria-hidden="true" class="breadcrumb_sep">›</span>';
@@ -60,14 +61,17 @@ function displayProduct($p, $path, $db){
 	echo '<div class="produkts">';
 	echo '<div class="produkts-top">
 		<div class="produkts-top-left">
-			<img class="produkts-top-main-img" src="img/'.$images[0].'"/>
+			<img class="produkts-top-main-img" id="main-img" src="img/'.$images[0].'"/>
 		</div>';
 		echo '<div class="produkts-top-right">
-			<h1 class="produkts-title">'.$title.'</h1>
-			<p class="produkts-p-text">Color</p>';
-			foreach($color as $clr){
-				echo '<div class="color-example" style="background-color:'.$clr.'"></div>';
+			<h1 class="produkts-title">'.$title.'</h1>';
+			if(!empty($color)){
+				echo '<p class="produkts-p-text">Color</p>';
+				foreach($color as $clr){
+					echo '<div class="color-example" style="background-color:'.$clr.'"></div>';
+				}
 			}
+			
 		echo '<label for="size-example" class="produkts-p-text">Size</label>
 			<select onchange="selectChange()" name="size-example" class="size-select" id="size-select">';
 				foreach($price as $key => $value){
@@ -222,6 +226,94 @@ function displayAllProducts($db){
 				<p class="produkti-title">'.$title.'</p>
 				<p class="produkti-price">'.$priceText.'</p>
 			</a>';
+	}
+}
+
+function displayFilteredProducts($produkti, $tag, $title, $db){
+	if (strcmp($produkti, 'all') == 0 || strcmp($produkti, 'visi') == 0) {
+		displayAllProducts($db);
+	} else {
+		echo '<div class="section-header section-header-breadcrumb">
+			<nav class="breadcrumb">
+				<a href="http://localhost/elliandhugo/" title="Back to frontpage">Home</a>
+				<span aria-hidden="true" class="breadcrumb_sep">›</span>';
+				if(!empty($path)){
+					foreach($path as $tp){
+						echo '<a href="#" title="Back to '.$tp.'">'.$tp.'</a>
+						<span aria-hidden="true" class="breadcrumb_sep">›</span>';
+					}
+				}
+				echo '<span class="capitalize">'.$title.'</span>
+			</nav>
+		</div>';
+		$tag0 = 0;
+		$tag1 = 9999999;
+		if ($tag != '') {
+			if(count(explode("-", $tag)) > 1){
+				list($tag0, $tag1) = explode("-", $tag);			
+			} else {
+				if (strcmp($produkti, 'virs') == 0) {
+					$tag0 = explode("-", $tag)[0];
+				} else {
+					$tag1 = explode("-", $tag)[0];
+				}				
+			}
+		}
+
+		$query = "SELECT * FROM piedavajums WHERE title = '$produkti' OR url = '$produkti' OR text like '$produkti' ORDER BY ID DESC";
+		if(strcmp($produkti, 'zem') == 0 || strcmp($produkti, 'virs') == 0){
+			$query = "SELECT * FROM piedavajums ORDER BY ID DESC";
+		} 
+		$batch2 = $db->select($query);
+		displayProductInPage($batch2, $tag0, $tag1, $title);
+		echo "<small class='view-more'><a href='?cat=all' title='Skatīt visu kolekciju'>Skatīt visus piedāvājumus</a></small>";
+	}
+}
+
+function displayProductInPage($batch, $priceDownLimit, $priceUpLimit, $pageTitle){
+	$dsp = false;
+	if ($batch != 0) {
+		foreach($batch as $prod){
+			$images = unserialize($prod->images);
+			$title = $prod->title;
+			$price = unserialize($prod->price);
+			$priceText = '';
+			$display = false;
+			$path[] = $pageTitle;
+			if(count($price) > 1){
+				$least = 999999;
+				foreach($price as $prc){
+					if($least > intval($prc)){
+						$least = intval($prc);
+					}
+					if($prc > $priceDownLimit && $prc < $priceUpLimit){
+						$display = true;
+					}
+				}
+				$least = '<strong>'.$least.'</strong>';
+				$priceText = "Sākot no ".$least." €";
+			} else {
+				$priceText = $price['all'];
+				if($priceText != '' && is_numeric($priceText)){
+					if($priceText > $priceDownLimit && $priceText < $priceUpLimit){
+						$display = true;
+					}
+					$priceText = $priceText.' €';
+				}
+				$priceText = '<strong>'.$priceText.'</strong>';
+			}
+			if ($display == true) {
+				$dsp = true;
+				echo '<a class="produkti" href="?p='.$prod->url.'&path='.$path.'">
+				<div class="produkti-image" style="background-image:url(img/'.$images[0].')"></div>
+				<p class="produkti-title">'.$title.'</p>
+				<p class="produkti-price">'.$priceText.'</p>
+			</a>';
+			}
+		}
+	}
+	if(!$dsp){
+		echo '<p class="error">Neatradās neviens produkts, kas atbilstu meklēšanas kritērijiem.</p>';
 	}
 }
 ?>

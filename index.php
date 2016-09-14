@@ -30,6 +30,7 @@
 		$p;
 		$cat;
 		$page;
+		$tag = $title ='';
 		$path='';
 
 		if(!empty($_GET)){
@@ -45,15 +46,21 @@
 			if(!empty($_GET['page'])){
 				$page = $_GET['page'];
 			}
+			if(!empty($_GET['tag'])){
+				$tag = $_GET['tag'];
+			}
+			if(!empty($_GET['title'])){
+				$title = $_GET['title'];
+			}
 		}
 
 		echo "<div class='content'>";
 		if(!empty($p)){
 			displayProduct($p, $path, $db);
-		} else if(!empty($cat)){
-			displayAllProducts($db);
-		}else if(!empty($page)){
+		} else if(!empty($page)){
 			showPage($page, $db);
+		} else if(!empty($cat)){
+			displayFilteredProducts($cat, $tag, $title, $db);
 		} else {
 			displayHome($db);			
 		}

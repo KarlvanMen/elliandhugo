@@ -224,3 +224,11 @@ div.wider-image{
         flex-wrap: wrap;
         justify-content: space-between;
 }
+
+.error {
+        padding: 15px 0;
+}
+
+.capitalize {
+        text-transform: capitalize;
+}
