@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/pages.css">
 
 		<!--[if lt IE 9]>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -24,9 +25,11 @@
 		require_once('/admin/includes/class-db.php');
 		require_once('/includes/header.php');
 		require_once('/includes/products.php');
+		require_once('/includes/pages.php');
 
 		$p;
 		$cat;
+		$page;
 		$path='';
 
 		if(!empty($_GET)){
@@ -39,15 +42,20 @@
 			if(!empty($_GET['cat'])){
 				$cat = $_GET['cat'];
 			}
+			if(!empty($_GET['page'])){
+				$page = $_GET['page'];
+			}
 		}
 
 		echo "<div class='content'>";
-		if(empty($_GET)){
-			displayHome($db);
-		} else if(!empty($p)){
+		if(!empty($p)){
 			displayProduct($p, $path, $db);
 		} else if(!empty($cat)){
 			displayAllProducts($db);
+		}else if(!empty($page)){
+			showPage($page, $db);
+		} else {
+			displayHome($db);			
 		}
 		echo '</div>';
 		require_once('/includes/footer.php');
