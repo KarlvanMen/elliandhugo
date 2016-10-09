@@ -1,0 +1,234 @@
+body{       
+        font-size: 15px;
+        line-height: 1.8;    
+        font-family: "Raleway","HelveticaNeue","Helvetica Neue",sans-serif;
+        color: #464646;
+        margin: 0;
+}
+
+h4 {
+        text-transform: uppercase;
+        color: #91c0c2;
+        font-size: 1.07143em;
+        line-height: 1.4;
+        text-align: center;
+        margin: 0;
+}
+
+p {
+        margin: 0 0 15px 0;
+}
+
+li {
+        list-style: none;        
+}
+
+.section-header{
+        border-bottom: 3px solid #eaeaea;
+}
+
+.section-header-breadcrumb{
+        margin-bottom: 15px;
+}
+
+.breadcrumb {
+        margin-bottom: 12px;
+        color: dimgrey;
+}
+
+.breadcrumb a{
+        padding: 7px;
+        margin-right: 7px;
+        color: #464646;
+}
+
+.breadcrumb a:first-child{
+        padding-left: 0;
+}
+
+.breadcrumb span{
+        padding-right: 7px;
+        margin-right: 7px;
+}
+
+.breadcrumb_sep{
+        font-size: 1.4em;
+        line-height: 1l
+}
+
+.content {
+        line-height: 1.3;
+        max-width: 700px;
+        width: 90%;
+        margin: 0 auto 30px;
+}
+
+.produkti {
+        color: dimgrey;            
+        text-decoration: none;
+        background: transparent;
+}
+
+.rel-produkti {
+        width: 48%;
+        display: inline-block;
+        float: left;
+}
+
+.produkti:hover{
+        color: #838383;
+}
+
+.produkti-image{
+        max-width: 100%;
+        height: 0;
+        padding-top: 100%;
+        overflow: hidden;
+        transition: all 0.1s ease-in;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+}
+
+div.wider-image{
+        background-size: auto 100%;
+}
+
+.produkti-image:hover{
+        opacity:0.7;
+}
+
+.view-more {
+        display: block;
+        clear: both;
+        font-size: 0.85em;
+        margin-top: 15px;
+        text-align: center;
+}
+.view-more a{
+        width: 100vw;
+}
+
+.produkts-top-left{
+        max-width: 100%;
+}
+
+.produkts-top-main-img{
+        width:100%;
+        height: auto;
+}
+
+.produkts-top-img-container {
+        margin: 0 auto;
+}
+
+.produkts-top-img {
+        display: inline-block;
+        width: calc(94% / 3);
+        height: 0;
+        padding-top: calc(94% / 3);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+        margin-right: 3%;
+        margin-bottom: 1vw;
+}
+
+.produkts-top-img:nth-child(3){
+        margin-right: 0;
+}
+
+.produkts-title{
+        font-size: 2em;
+        font-family: "Source Sans Pro","HelveticaNeue","Helvetica Neue",sans-serif;
+        font-weight: 700;
+        margin: 0 0 15px;
+        line-height: 1.4;
+        
+        -webkit-margin-before: 0.67em;
+        -webkit-margin-after: 0.67em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+}
+
+.produkts-p-text {        
+        margin-bottom: 2px;
+        font-weight: bold;
+        display:block;
+}
+
+.color-example{
+        height:20px;
+        width: 20px;
+        border-radius: 50%;
+        border: 1px solid #f5f5dc;
+        display:inline-block;
+        margin: 0 5px 1em 0;
+}
+
+.size-select{
+        background-color: #fff;
+        padding: 8px 10px;
+        padding-right: 28px;
+        text-indent: 0.01px;
+        cursor: pointer;
+        border: 1px solid #eaeaea;
+        border-radius: 3px;
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        margin: 0 0 1em;
+        color: #333;
+        line-height: 1.42;
+        font-size: 1em;     
+        -webkit-font-smoothing: antialiased;
+        text-rendering: auto;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-shadow: none;
+        font-family: Arial;
+        background-image: url("http://karlismendzins.co.nf/elli&hugo/img/elevator.svg");
+        background-repeat: no-repeat;
+        background-position:98% 50%;
+        background-size: auto 40%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+}
+
+.price-example{
+        color: dimgrey;
+        font-size: 2.14286em;
+        font-weight: 700;
+}
+
+.hr-clear-small {
+        border-top-color:transparent;
+        margin: 1em 0;
+        clear: both;
+        height: 0;
+}
+
+.produkts-desc-title{
+        font-weight: bold;
+        color: #464646;
+        margin: 0 15px 15px 0;
+        text-decoration: none;
+        background: transparent;
+        text-align: center;
+}
+
+.relative-products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+}
+
+.error {
+        padding: 15px 0;
+}
+
+.capitalize {
+        text-transform: capitalize;
+}
