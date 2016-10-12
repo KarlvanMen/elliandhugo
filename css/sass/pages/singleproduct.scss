@@ -1,67 +1,3 @@
-body {
-  font-size: 14px;
-  line-height: 1.8;
-  font-family: "Raleway","HelveticaNeue","Helvetica Neue",sans-serif;
-  color: #464646;
-  margin: 0; }
-
-h4 {
-  text-transform: uppercase;
-  color: #91c0c2;
-  font-size: 1.07143em;
-  line-height: 1.4;
-  text-align: center;
-  margin: 0; }
-
-p {
-  margin: 0 0 15px 0; }
-
-li {
-  list-style: none; }
-
-.capitalize {
-  text-transform: capitalize; }
-
-.content {
-  line-height: 1.3;
-  max-width: 700px;
-  width: 90%;
-  margin: 0 auto 30px; }
-
-.produkti {
-  color: dimgrey;
-  text-decoration: none;
-  background: transparent; }
-
-.produkti:hover {
-  color: #838383; }
-
-.produkti-image {
-  max-width: 100%;
-  height: 0;
-  padding-top: 100%;
-  overflow: hidden;
-  transition: all 0.1s ease-in;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center; }
-
-div.wider-image {
-  background-size: auto 100%; }
-
-.produkti-image:hover {
-  opacity: 0.7; }
-
-.view-more {
-  display: block;
-  clear: both;
-  font-size: 0.85em;
-  margin-top: 15px;
-  text-align: center; }
-
-.view-more a {
-  width: 100vw; }
-
 .produkts-desc-title {
   font-weight: bold;
   color: #464646;
@@ -74,13 +10,13 @@ div.wider-image {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
-
+  
 .rel-produkti {
   width: 48%;
   display: inline-block;
   float: left; }
 
-.produkts-top-left {
+  .produkts-top-left {
   max-width: 100%; }
 
 .produkts-top-main-img {
@@ -104,7 +40,7 @@ div.wider-image {
 .produkts-top-img:nth-child(3) {
   margin-right: 0; }
 
-.produkts-title {
+  .produkts-title {
   font-size: 2em;
   font-family: "Source Sans Pro","HelveticaNeue","Helvetica Neue",sans-serif;
   font-weight: 700;
@@ -162,6 +98,3 @@ div.wider-image {
   color: dimgrey;
   font-size: 2.14286em;
   font-weight: 700; }
-
-.error {
-  padding: 15px 0; }
