@@ -19,6 +19,10 @@ p {
 li {
   list-style: none; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 .capitalize {
   text-transform: capitalize; }
 
@@ -62,6 +66,98 @@ div.wider-image {
 .view-more a {
   width: 100vw; }
 
+footer {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center; }
+  footer ul {
+    padding: 0;
+    margin: 0; }
+  footer .saites {
+    padding: 15px 0 20px; }
+    footer .saites a {
+      color: #464646;
+      font-size: 0.85em;
+      text-transform: uppercase;
+      font-weight: 500; }
+  footer .social {
+    display: flex;
+    justify-content: center;
+    font-size: 3em; }
+    footer .social li {
+      display: inline-block; }
+      footer .social li .fa {
+        padding: 0 7px;
+        color: #00aced; }
+        footer .social li .fa svg {
+          height: 1em;
+          width: 1em;
+          border-top: 0.3em solid transparent; }
+  footer .footer-bottom {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea; }
+
+.site-header {
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #ffdfdc;
+  color: #fff;
+  padding: 2px auto;
+  margin-bottom: 1em; }
+  .site-header .wrapper {
+    transition: height 0.3s ease; }
+    .site-header .wrapper main {
+      padding: 5px 15px; }
+      .site-header .wrapper main .box-shadow-menu {
+        position: relative;
+        padding-left: 1.25em; }
+        .site-header .wrapper main .box-shadow-menu:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0.25em;
+          width: 1em;
+          height: 0.15em;
+          background: white;
+          box-shadow: 0 0.25em 0 0 white, 0 0.5em 0 0 white; }
+    .site-header .wrapper #menu_nav {
+      width: 100%;
+      height: 100%;
+      display: none;
+      transition: display 0.2s ease; }
+      .site-header .wrapper #menu_nav .list {
+        padding: 12px 0;
+        text-indent: 15px;
+        max-width: 100%;
+        font-size: 1.1em;
+        font-family: "Source Sans Pro","HelveticaNeue","Helvetica Neue",sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        list-style: none; }
+        .site-header .wrapper #menu_nav .list .sublist {
+          margin: 0;
+          padding: 0;
+          display: none; }
+          .site-header .wrapper #menu_nav .list .sublist .sublist-link {
+            padding: 12px 15px;
+            color: #000;
+            font-size: 0.9em;
+            font-family: "Source Sans Pro","HelveticaNeue","Helvetica Neue",sans-serif;
+            border-top: 1px solid #eaeaea;
+            list-style: none;
+            background-color: #fff; }
+
+.logo {
+  padding: 40px 0;
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1; }
+  .logo img {
+    max-width: 100%; }
+  .logo small {
+    display: block; }
+
 .produkts-desc-title {
   font-weight: bold;
   color: #464646;
@@ -77,8 +173,7 @@ div.wider-image {
 
 .rel-produkti {
   width: 48%;
-  display: inline-block;
-  float: left; }
+  display: inline-block; }
 
 .produkts-top-left {
   max-width: 100%; }

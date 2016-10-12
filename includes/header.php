@@ -6,9 +6,6 @@
 <meta name="author" content="Kārlis Mendziņš">
 
 <link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/footer.css">
-<link rel="stylesheet" href="css/pages.css">
 
 <!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
