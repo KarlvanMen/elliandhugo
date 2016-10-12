@@ -1,99 +1,118 @@
-.produkts-desc-title {
-  font-weight: bold;
-  color: #464646;
-  margin: 0 15px 15px 0;
-  text-decoration: none;
-  background: transparent;
-  text-align: center; }
-
-.relative-products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-
-.rel-produkti {
-  width: 48%;
-  display: inline-block; }
-
-  .produkts-top-left {
-  max-width: 100%; }
-
-.produkts-top-main-img {
-  width: 100%;
-  height: auto; }
-
-.produkts-top-img-container {
-  margin: 0 auto; }
-
-.produkts-top-img {
-  display: inline-block;
-  width: calc(94% / 3);
-  height: 0;
-  padding-top: calc(94% / 3);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
-  margin-right: 3%;
-  margin-bottom: 1vw; }
-
-.produkts-top-img:nth-child(3) {
-  margin-right: 0; }
-
-  .produkts-title {
-  font-size: 2em;
-  font-family: "Source Sans Pro","HelveticaNeue","Helvetica Neue",sans-serif;
-  font-weight: 700;
-  margin: 0 0 15px;
-  line-height: 1.4;
-  -webkit-margin-before: 0.67em;
-  -webkit-margin-after: 0.67em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px; }
-
-.produkts-p-text {
-  margin-bottom: 2px;
-  font-weight: bold;
-  display: block; }
-
-.color-example {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  border: 1px solid #f5f5dc;
-  display: inline-block;
-  margin: 0 5px 1em 0; }
-
-.size-select {
-  background-color: #fff;
-  padding: 8px 10px;
-  padding-right: 28px;
-  text-indent: 0.01px;
-  cursor: pointer;
-  border: 1px solid #eaeaea;
-  border-radius: 3px;
-  width: 100%;
-  max-width: 100%;
-  display: block;
-  margin: 0 0 1em;
-  color: #333;
-  line-height: 1.42;
-  font-size: 1em;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: auto;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-shadow: none;
-  font-family: Arial;
-  background-image: url("http://karlismendzins.co.nf/elli&hugo/img/elevator.svg");
-  background-repeat: no-repeat;
-  background-position: 98% 50%;
-  background-size: auto 40%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
-
-.price-example {
-  color: dimgrey;
-  font-size: 2.14286em;
-  font-weight: 700; }
+.content{
+  .produkts {
+    .produkts-top{
+      .produkts-top-left {
+        max-width: 100%; 
+        .produkts-top-main-img {
+          width: 100%;
+          height: auto; 
+        }
+      }
+      .produkts-top-right {
+        .produkts-title {
+          font-size: 2em;
+          font-family: "Source Sans Pro","HelveticaNeue","Helvetica Neue",sans-serif;
+          font-weight: 700;
+          margin: 0 0 15px;
+          line-height: 1.4;
+          -webkit-margin-before: 0.67em;
+          -webkit-margin-after: 0.67em;
+          -webkit-margin-start: 0px;
+          -webkit-margin-end: 0px; 
+        }
+        .size-select {
+          background-color: #fff;
+          padding: 8px 10px;
+          padding-right: 28px;
+          text-indent: 0.01px;
+          cursor: pointer;
+          border: 1px solid #eaeaea;
+          border-radius: 3px;
+          width: 100%;
+          max-width: 100%;
+          display: block;
+          margin: 0 0 1em;
+          color: #333;
+          line-height: 1.42;
+          font-size: 1em;
+          -webkit-font-smoothing: antialiased;
+          text-rendering: auto;
+          letter-spacing: normal;
+          word-spacing: normal;
+          text-transform: none;
+          text-shadow: none;
+          font-family: Arial;
+          background-image: url("http://karlismendzins.co.nf/elli&hugo/img/elevator.svg");
+          background-repeat: no-repeat;
+          background-position: 98% 50%;
+          background-size: auto 40%;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none; 
+        }
+        .price-example {
+          color: dimgrey;
+          font-size: 2.14286em;
+          font-weight: 700; 
+        }
+        .produkts-p-text {
+          margin-bottom: 2px;
+          font-weight: bold;
+          display: block; 
+        }
+        .color-example {
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          border: 1px solid #f5f5dc;
+          display: inline-block;
+          margin: 0 5px 1em 0;
+        }
+      }
+      .produkts-top-img-container {
+        margin: 0 auto; 
+        .produkts-top-img {
+          display: inline-block;
+          width: calc(94% / 3);
+          height: 0;
+          padding-top: calc(94% / 3);
+          background-repeat: no-repeat;
+          background-size: 100% auto;
+          background-position: center;
+          margin-right: 3%;
+          margin-bottom: 1vw; 
+          &:nth-child(3) {
+            margin-right: 0; 
+          }
+        }
+      }
+    }
+    .produkts-desc-title {
+      font-weight: bold;
+      color: #464646;
+      margin: 0 15px 15px 0;
+      text-decoration: none;
+      background: transparent;
+      text-align: center;
+    }
+  }
+  div{
+    .produkts-desc-title {
+      font-weight: bold;
+      color: #464646;
+      margin: 0 15px 15px 0;
+      text-decoration: none;
+      background: transparent;
+      text-align: center;
+    }
+  }
+  .relative-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    .rel-produkti {
+      width: 48%;
+      display: inline-block; 
+    }
+  }
+}
