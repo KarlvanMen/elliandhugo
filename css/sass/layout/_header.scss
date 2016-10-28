@@ -1,0 +1,42 @@
+.site-header{
+    background-color: rgb(232, 230, 230);
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    .wrapper{
+        main{
+            padding: 0.5em 1em;
+            .box-shadow-menu{
+                position: relative;
+                padding-left: 1.25em;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0.125em;
+                    width: 1em;
+                    height: 0.125em;
+                    background: black;
+                    box-shadow: 
+                        0 0.35em 0 0 black,
+                        0 0.75em 0 0 black;                    
+                }
+            }
+        }
+        nav{
+            display: none;
+            li{
+                list-style-type: none;
+                border-top: 1px solid #666;
+                font-size: 1.2em;
+                p{ 
+                    padding: 1em;
+                    margin: 0;
+                }
+                ul{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

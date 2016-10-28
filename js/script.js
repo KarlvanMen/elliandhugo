@@ -40,13 +40,21 @@ window.onload = function() {
         var menuList = document.getElementsByClassName('list');
         for(var i = 0; i < menuList.length; i++){
                 if(menuList[i].childNodes.length > 1){
-                        menuList[i].childNodes[1].style.display = 'none';
-                        menuList[i].innerHTML += " +";
+                        console.log(menuList[i].childNodes[0]);
+                        console.log(menuList[i].childNodes);
+                        menuList[i].childNodes[2].style.display = 'none';
+                        menuList[i].childNodes[0].innerHTML += " +";
                         menuList[i].onclick=function(){
-                                if (this.childNodes[1].style.display == 'none') {
-                                        this.childNodes[1].style.display = 'block';
+                                if (this.childNodes[2].style.display == 'none') {
+                                        var temp = this.childNodes[0].innerHTML;
+                                        temp = temp.substring(0, temp.length-1);
+                                        this.childNodes[0].innerHTML = temp + "-";
+                                        this.childNodes[2].style.display = 'block';
                                 } else {
-                                        this.childNodes[1].style.display = 'none';
+                                        var temp = this.childNodes[0].innerHTML;
+                                        temp = temp.substring(0, temp.length-1);
+                                        this.childNodes[0].innerHTML = temp + "+";         
+                                        this.childNodes[2].style.display = 'none';
                                 }
                         }
                 }
@@ -67,10 +75,8 @@ function displayMenu(){
         if (menu.dataset.show == 'true') {
                 menu.style.display = "none";
                 menu.dataset.show = 'false';
-                document.getElementById("drawer").style.minHeight = "auto";
         } else {
                 menu.style.display = "block";
                 menu.dataset.show = 'true';
-                document.getElementById("drawer").style.minHeight = "100vh";
         }
 }
