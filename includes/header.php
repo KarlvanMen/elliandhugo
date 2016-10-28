@@ -5,7 +5,7 @@
 <meta name="description" content="Elli & Hugo">
 <meta name="author" content="Kārlis Mendziņš">
 
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 <!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
