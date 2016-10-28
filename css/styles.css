@@ -1,167 +1,592 @@
 body {
+
   font-size: 14px;
+
   line-height: 1.8;
-  font-family: "Raleway","HelveticaNeue","Helvetica Neue",sans-serif;
+
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", sans-serif;
+
   color: #464646;
-  margin: 0; }
+
+  margin: 0;
+}
+
+
 
 h4 {
+
   text-transform: uppercase;
+
   color: #91c0c2;
+
   font-size: 1.07143em;
+
   line-height: 1.4;
+
   text-align: center;
-  margin: 0; }
+
+  margin: 0;
+}
+
+
 
 p {
-  margin: 0 0 15px 0; }
+
+  margin: 0 0 15px 0;
+}
+
+
 
 li {
-  list-style: none; }
+
+  list-style: none;
+}
+
+
 
 .capitalize {
-  text-transform: capitalize; }
+
+  text-transform: capitalize;
+}
+
+
+
+a {
+
+  text-decoration: none;
+
+  color: inherit;
+}
+
+
+
+.site-header {
+
+  font-size: 1em;
+
+  font-weight: bold;
+
+  background-color: #ffdfdc;
+
+  color: #fff;
+
+  padding: 2px auto;
+
+  margin-bottom: 1em;
+}
+
+
+.site-header .wrapper {
+
+  transition: height 0.3s ease;
+}
+
+
+.site-header .wrapper main {
+
+  padding: 5px 15px;
+}
+
+
+.site-header .wrapper main .box-shadow-menu {
+
+  position: relative;
+
+  padding-left: 1.25em;
+}
+
+
+.site-header .wrapper main .box-shadow-menu::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0.25em;
+
+  width: 1em;
+
+  height: 0.15em;
+
+  background: white;
+
+  box-shadow: 0 0.25em 0 0 white, 0 0.5em 0 0 white;
+}
+
+
+.site-header .wrapper #menu_nav {
+
+  width: 100%;
+
+  height: 100%;
+
+  display: none;
+
+  transition: display 0.2s ease;
+}
+
+
+.site-header .wrapper #menu_nav .list {
+
+  padding: 12px 0;
+
+  text-indent: 15px;
+
+  max-width: 100%;
+
+  font-size: 1.1em;
+
+  font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", sans-serif;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  list-style: none;
+}
+
+
+.site-header .wrapper #menu_nav .list .sublist {
+
+  margin: 0;
+
+  padding: 0;
+
+  display: none;
+}
+
+
+.site-header .wrapper #menu_nav .list .sublist .sublist-link {
+
+  padding: 12px 15px;
+
+  color: #000;
+
+  font-size: 0.9em;
+
+  font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", sans-serif;
+
+  border-top: 1px solid #eaeaea;
+
+  list-style: none;
+
+  background-color: #fff;
+}
+
+
+
+.logo {
+
+  padding: 40px 0;
+
+  max-width: 75%;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+  line-height: 1;
+}
+
+
+.logo img {
+
+  max-width: 100%;
+}
+
+
+.logo small {
+
+  display: block;
+}
+
+
 
 .content {
+
   line-height: 1.3;
+
   max-width: 700px;
+
   width: 90%;
-  margin: 0 auto 30px; }
+
+  margin: 0 auto 30px;
+}
+
+
 
 .produkti {
+
   color: dimgrey;
+
   text-decoration: none;
-  background: transparent; }
+
+  background: transparent;
+}
+
+
 
 .produkti:hover {
-  color: #838383; }
+
+  color: #838383;
+}
+
+
 
 .produkti-image {
+
   max-width: 100%;
+
   height: 0;
+
   padding-top: 100%;
+
   overflow: hidden;
+
   transition: all 0.1s ease-in;
+
   background-repeat: no-repeat;
+
   background-size: 100% auto;
-  background-position: center; }
+
+  background-position: center;
+}
+
+
 
 div.wider-image {
-  background-size: auto 100%; }
+
+  background-size: auto 100%;
+}
+
+
 
 .produkti-image:hover {
-  opacity: 0.7; }
+
+  opacity: 0.7;
+}
+
+
 
 .view-more {
+
   display: block;
+
   clear: both;
+
   font-size: 0.85em;
+
   margin-top: 15px;
-  text-align: center; }
+
+  text-align: center;
+}
+
+
 
 .view-more a {
-  width: 100vw; }
+
+  width: 100vw;
+}
+
+
+
+footer {
+
+  width: 90%;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+footer ul {
+
+  padding: 0;
+
+  margin: 0;
+}
+
+
+footer .saites {
+
+  padding: 15px 0 20px;
+}
+
+
+footer .saites a {
+
+  color: #464646;
+
+  font-size: 0.85em;
+
+  text-transform: uppercase;
+
+  font-weight: 500;
+}
+
+
+footer .social {
+
+  display: flex;
+
+  justify-content: center;
+
+  font-size: 3em;
+}
+
+
+footer .social li {
+
+  display: inline-block;
+}
+
+
+footer .social li .fa {
+
+  padding: 0 7px;
+
+  color: #00aced;
+}
+
+
+footer .social li .fa svg {
+
+  height: 1em;
+
+  width: 1em;
+
+  border-top: 0.3em solid transparent;
+}
+
+
+footer .footer-bottom {
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #eaeaea;
+}
+
+
 
 .produkts-desc-title {
+
   font-weight: bold;
+
   color: #464646;
+
   margin: 0 15px 15px 0;
+
   text-decoration: none;
+
   background: transparent;
-  text-align: center; }
+
+  text-align: center;
+}
+
+
 
 .relative-products {
+
   display: flex;
+
   flex-wrap: wrap;
-  justify-content: space-between; }
+
+  justify-content: space-between;
+}
+
+
 
 .rel-produkti {
+
   width: 48%;
+
   display: inline-block;
-  float: left; }
+
+  float: left;
+}
+
+
 
 .produkts-top-left {
-  max-width: 100%; }
+
+  max-width: 100%;
+}
+
+
 
 .produkts-top-main-img {
+
   width: 100%;
-  height: auto; }
+
+  height: auto;
+}
+
+
 
 .produkts-top-img-container {
-  margin: 0 auto; }
+
+  margin: 0 auto;
+}
+
+
 
 .produkts-top-img {
+
   display: inline-block;
+
   width: calc(94% / 3);
+
   height: 0;
+
   padding-top: calc(94% / 3);
+
   background-repeat: no-repeat;
+
   background-size: 100% auto;
+
   background-position: center;
+
   margin-right: 3%;
-  margin-bottom: 1vw; }
+
+  margin-bottom: 1vw;
+}
+
+
 
 .produkts-top-img:nth-child(3) {
-  margin-right: 0; }
+
+  margin-right: 0;
+}
+
+
 
 .produkts-title {
+
   font-size: 2em;
-  font-family: "Source Sans Pro","HelveticaNeue","Helvetica Neue",sans-serif;
+
+  font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", sans-serif;
+
   font-weight: 700;
+
   margin: 0 0 15px;
+
   line-height: 1.4;
+
   -webkit-margin-before: 0.67em;
+
   -webkit-margin-after: 0.67em;
+
   -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px; }
+
+  -webkit-margin-end: 0px;
+}
+
+
 
 .produkts-p-text {
+
   margin-bottom: 2px;
+
   font-weight: bold;
-  display: block; }
+
+  display: block;
+}
+
+
 
 .color-example {
+
   height: 20px;
+
   width: 20px;
+
   border-radius: 50%;
+
   border: 1px solid #f5f5dc;
+
   display: inline-block;
-  margin: 0 5px 1em 0; }
+
+  margin: 0 5px 1em 0;
+}
+
+
 
 .size-select {
+
   background-color: #fff;
+
   padding: 8px 10px;
+
   padding-right: 28px;
+
   text-indent: 0.01px;
+
   cursor: pointer;
+
   border: 1px solid #eaeaea;
+
   border-radius: 3px;
+
   width: 100%;
+
   max-width: 100%;
+
   display: block;
+
   margin: 0 0 1em;
+
   color: #333;
+
   line-height: 1.42;
+
   font-size: 1em;
+
   -webkit-font-smoothing: antialiased;
+
   text-rendering: auto;
+
   letter-spacing: normal;
+
   word-spacing: normal;
+
   text-transform: none;
+
   text-shadow: none;
+
   font-family: Arial;
+
   background-image: url("http://karlismendzins.co.nf/elli&hugo/img/elevator.svg");
+
   background-repeat: no-repeat;
+
   background-position: 98% 50%;
+
   background-size: auto 40%;
+
   -webkit-appearance: none;
+
   -moz-appearance: none;
-  appearance: none; }
+
+  appearance: none;
+}
+
+
 
 .price-example {
+
   color: dimgrey;
+
   font-size: 2.14286em;
-  font-weight: 700; }
+
+  font-weight: 700;
+}
+
+
 
 .error {
-  padding: 15px 0; }
+
+  padding: 15px 0;
+}

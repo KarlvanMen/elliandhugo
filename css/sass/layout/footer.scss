@@ -1,0 +1,40 @@
+footer{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+    ul{
+        padding: 0;
+        margin: 0;	
+    }
+    .saites {
+        padding: 15px 0 20px;
+        a {
+            color: #464646;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        font-size: 3em;
+        li{
+            display: inline-block;
+            .fa{
+                padding: 0 7px;
+                color: #00aced;
+                svg{
+                    height: 1em;
+                    width: 1em;
+                    border-top: 0.3em solid transparent;
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eaeaea;	
+    }
+}
