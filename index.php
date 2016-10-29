@@ -3,6 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors',1);
 require_once('/admin/includes/class-db.php');
 require_once('/includes/header.php');
+require_once('/includes/sidebar.php');
 require_once('/includes/products.php');
 require_once('/includes/pages.php');
 

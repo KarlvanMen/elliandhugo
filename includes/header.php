@@ -16,7 +16,7 @@
 		<main>
 			<a href="#menu" class="box-shadow-menu" onclick="displayMenu()">Izvēlne</a>
 		</main>
-		<nav id="menu_nav" data-show="false">
+		<nav class="menu-small" id="menu_nav" data-show="false">
 			<li class="list"><a href="/elliandhugo"><p>Sākums</p></a></li>
 			<li class="list"><a href="/elliandhugo?cat=virtuvei&title=virtuvei"><p>Virtuvei</p></a></li>
 			<li class="list"><a href="/elliandhugo?cat=dekori&title=dekori"><p>Dekori</p></a></li>
@@ -33,6 +33,14 @@
 					<li class="sublist-link"><a href="/elliandhugo?cat=virs&tag=100&title=Virs 100€">Virs 100€</a></li>
 				</ul>
 			</li>
+		</nav>
+		<nav class="menu-large">
+			<li class="list active"><a href="/elliandhugo"><p>Sākums</p></a></li>
+			<li class="list"><a href="/elliandhugo?cat=dekori&title=Dekori"><p>Dekori</p></a></li>
+			<li class="list"><a href="/elliandhugo?cat=kazam&title=Kāzām"><p>Kāzām</p></a></li>
+			<li class="list"><a href="/elliandhugo?cat=kristibam&title=Kristībām"><p>Kristībām</p></a></li>
+			<li class="list"><a href="/elliandhugo?cat=visi&title=Visi"><p>Visi produkti</p></a></li>
+			<li class="list"><a href="/elliandhugo?page=aboutus"><p>Par mums</p></a></li>
 		</nav>
 	</div>
 	<div class="logo">

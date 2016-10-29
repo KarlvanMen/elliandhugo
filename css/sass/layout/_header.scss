@@ -24,7 +24,7 @@
                 }
             }
         }
-        nav{
+        .menu-small{
             text-transform: uppercase;
             display: none;
             .list{
@@ -46,26 +46,74 @@
                 }
             }
         }
+        .menu-large{
+            display: none;
+        }
     }
-}
-.logo{
-    min-width: 100%;
-    a{
-        min-width: 100%;
-        img{
-            width: 80%;
-            margin: 0 auto;
-            margin-left: 10%;
-            margin-top: 2em;
-            @media screen and (min-width: $tablet) {
-                width: 30%;
-                margin-left: 35%;
+    .logo{
+        width: 100%;
+        a{
+            min-width: 100%;
+            img{
+                width: 80%;
+                margin: 0 auto;
+                margin-left: 10%;
+                margin-top: 2em;
+                @media screen and (min-width: $tablet) {
+                    width: 30%;
+                    margin-left: 35%;
+                }
+            }
+            p{
+                margin: 0;
+                text-align: center;
+                font-size: 0.65em;
             }
         }
-        p{
-            margin: 0;
-            text-align: center;
-            font-size: 0.65em;
+    }
+    @media screen and (min-width: $laptop) {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 2.5em;
+        .wrapper{
+            order: 1;
+            flex: 1;
+            background-color: inherit;
+            main{
+                display: none;
+            }
+            .menu-large {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 100%;
+                margin-left: 15%;
+                .list {
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    list-style-type: none;
+                }
+                .active{
+                    font-weight: 600;
+                }
+            }
+            .menu-small{
+                display: none;
+            }
+        }
+        .logo{
+            width: 25%;
+            a{
+                img{
+                    width: 100%;
+                    margin: 0;
+                }
+                p{
+                    display: none;
+                }
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 <?php
 function displayHome($db){
-	$query = "SELECT * FROM piedavajums ORDER BY ID DESC LIMIT 9";
+	echo "<h2 class='title-top'>Piedāvājums</h2>";
+	$query = "SELECT * FROM piedavajums ORDER BY ID DESC LIMIT 12";
 	$produkti = $db->select($query);
 	foreach($produkti as $prod){
 		$images = unserialize($prod->images);
@@ -100,7 +101,7 @@ function displayProduct($p, $path, $db){
 	echo '<br/>
 		<div class="produkts-top-img-container">';
 			foreach($images as $img){
-				echo '<div class="produkts-top-img" style="background-image:url(img/'.$img.');"></div>';
+				echo '<img class="produkts-top-img" src="img/'.$img.'" alt="alternative image of a product">';
 			}
 			echo '</div>
 					<h4 class="produkts-desc-title">Apraksts</h4>
