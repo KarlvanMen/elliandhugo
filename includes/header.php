@@ -35,10 +35,10 @@
 			</li>
 		</nav>
 	</div>
+	<div class="logo">
+		<a href="/elliandhugo/">
+			<img src="img/logo.jpg">
+			<p>One-stop-shop for personalized gifts</p>
+		</a>
+	</div>
 </header>
-<div class="logo">
-	<a href="/elliandhugo/">
-		<img src="img/logo.jpg">
-		<p>One-stop-shop for personalized gifts</p>
-	</a>
-</div>

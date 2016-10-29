@@ -1,44 +1,65 @@
+@import '../helpers/variables';
 footer{
     width: 90%;
     margin: 0 auto;
-    h4{
-        color: #91c0c2;
+    div{
         text-align: center;
-        text-transform: uppercase;
-        font-size: 0.8em;
-    }
-    .saites{
-        list-style-type: none;
-        padding: 0;
         margin: 0;
-        li{
-            color: dimgray;
-            font-size: 0.6em;
-            text-align: center;
-            padding: 0.5em;
+        h4{
+            color: #91c0c2;
             text-transform: uppercase;
+            font-size: 0.8em;
         }
-    }
-    .footer-bottom{
-        font-size: 0.65em;
-        text-align: center;
-    }
-    .social{
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
-        a {
-            width: 15%;
-            img {
-                width: 100%;
+        .saites{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            li{
+                color: dimgray;
+                font-size: 0.6em;
+                padding: 0.5em;
+                text-transform: uppercase;
             }
         }
-        
+        .footer-bottom{
+            font-size: 0.65em;
+        }
+        .social{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            a {
+                width: 15%;
+                img {
+                    width: 100%;
+                }
+            }
+            
+        }
+        @media screen and (min-width: $tablet) {
+            width: 49.5%;
+            display: inline-block;
+            text-align: left; 
+            vertical-align:top;
+            .social{
+                width: 100%;
+                display: inline-block;
+                a{
+                    img{
+                        width: 15%;
+                    }
+                }
+            }
+        }
     }
-    .copyright{
+    .copyright {
+        display: block;
+        width: 100%;
         font-size: 0.6em;
         margin-top: 3em;
         text-align: center;
+        border-top: 2px solid #eee;
+        padding-top: 2em;
     }
 }
