@@ -23,6 +23,19 @@ footer{
         font-size: 0.65em;
         text-align: center;
     }
+    .social{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        a {
+            width: 15%;
+            img {
+                width: 100%;
+            }
+        }
+        
+    }
     .copyright{
         font-size: 0.6em;
         margin-top: 3em;

@@ -103,6 +103,15 @@ footer {
   footer .footer-bottom {
     font-size: 0.65em;
     text-align: center; }
+  footer .social {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
+    footer .social a {
+      width: 15%; }
+      footer .social a img {
+        width: 100%; }
   footer .copyright {
     font-size: 0.6em;
     margin-top: 3em;
