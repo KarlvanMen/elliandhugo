@@ -40,20 +40,17 @@ window.onload = function() {
         var menuList = document.getElementsByClassName('list');
         for(var i = 0; i < menuList.length; i++){
                 if(menuList[i].childNodes.length > 1){
-                        console.log(menuList[i].childNodes[0]);
-                        console.log(menuList[i].childNodes);
+                                var plus = "<span style='font-weight: 200; color: #666;'>+</span>";
                         menuList[i].childNodes[2].style.display = 'none';
-                        menuList[i].childNodes[0].innerHTML += " +";
+                        menuList[i].childNodes[0].innerHTML += " " + plus;
                         menuList[i].onclick=function(){
+                                var plus = "<span style='font-weight: 200; color: #666;'>+</span>";
+                                var minus = "<span style='font-weight: 200; color: #666;'>-</span>";
                                 if (this.childNodes[2].style.display == 'none') {
-                                        var temp = this.childNodes[0].innerHTML;
-                                        temp = temp.substring(0, temp.length-1);
-                                        this.childNodes[0].innerHTML = temp + "-";
+                                        this.childNodes[0].childNodes[1].innerHTML = minus;
                                         this.childNodes[2].style.display = 'block';
                                 } else {
-                                        var temp = this.childNodes[0].innerHTML;
-                                        temp = temp.substring(0, temp.length-1);
-                                        this.childNodes[0].innerHTML = temp + "+";         
+                                        this.childNodes[0].childNodes[1].innerHTML = plus;       
                                         this.childNodes[2].style.display = 'none';
                                 }
                         }

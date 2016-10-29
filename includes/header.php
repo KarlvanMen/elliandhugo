@@ -39,6 +39,6 @@
 <div class="logo">
 	<a href="/elliandhugo/">
 		<img src="img/logo.jpg">
-		<p><small>One-stop-shop for personalized gifts</small></p>
+		<p>One-stop-shop for personalized gifts</p>
 	</a>
 </div>

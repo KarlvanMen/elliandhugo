@@ -31,13 +31,33 @@ body {
         background: black;
         box-shadow: 0 0.35em 0 0 black, 0 0.75em 0 0 black; }
   .site-header .wrapper nav {
+    text-transform: uppercase;
     display: none; }
-    .site-header .wrapper nav li {
+    .site-header .wrapper nav .list {
       list-style-type: none;
       border-top: 1px solid #666;
       font-size: 1.2em; }
-      .site-header .wrapper nav li p {
+      .site-header .wrapper nav .list p {
         padding: 1em;
         margin: 0; }
-      .site-header .wrapper nav li ul {
+      .site-header .wrapper nav .list .sublist {
+        margin: 0;
         padding: 0; }
+        .site-header .wrapper nav .list .sublist .sublist-link {
+          padding: 1em;
+          border-top: 1px solid #e8e6e6;
+          background-color: #fff; }
+
+.logo {
+  min-width: 100%; }
+  .logo a {
+    min-width: 100%; }
+    .logo a img {
+      width: 80%;
+      margin: 0 auto;
+      margin-left: 10%;
+      margin-top: 2em; }
+    .logo a p {
+      margin: 0;
+      text-align: center;
+      font-size: 0.65em; }
