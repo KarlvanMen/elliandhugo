@@ -30,7 +30,7 @@ function displayHome($db){
 				<p class="produkti-price">'.$priceText.'</p>
 			</a>';
 	}
-	echo "<small class='view-more'><a href='?cat=all' title='Skatīt visu kolekciju'>Skatīt visus piedāvājumus</a></small>";
+	echo "<p class='view-more'><a href='?cat=all' title='Skatīt visu kolekciju'>Skatīt visus piedāvājumus</a></p>";
 }
 function displayProduct($p, $path, $db){		
 	$query = "SELECT * FROM piedavajums WHERE url = '".$p."' ORDER BY ID";
@@ -45,7 +45,7 @@ function displayProduct($p, $path, $db){
 
 	echo '<div class="section-header section-header-breadcrumb">
 		<nav class="breadcrumb">
-			<a href="http://localhost/elliandhugo/" title="Back to frontpage">Home</a>
+			<a href="http://localhost/elliandhugo/" title="Atpakaļ uz sākumlapu">Sākums</a>
 			<span aria-hidden="true" class="breadcrumb_sep">›</span>';
 			if(!empty($path)){
 				echo $path;
@@ -107,7 +107,7 @@ function displayProduct($p, $path, $db){
 					<p class="produkts-desc-p">'.$text.'</p>
 				</div>';
 			echo '<div>
-					<h4 class="produkts-desc-title">Saistītie produkti</h4>
+					<h4 class="related-products">Saistītie produkti</h4>
 				</div>';
 			displayRelatedProducts($produkts[0]->ID, $db);	
 	echo "</div>";
@@ -186,7 +186,7 @@ function displayRelatedProducts($id, $db){
 function displayAllProducts($db){
 	echo '<div class="section-header section-header-breadcrumb">
 		<nav class="breadcrumb">
-			<a href="http://localhost/elliandhugo/" title="Back to frontpage">Home</a>
+			<a href="http://localhost/elliandhugo/" title="Back to frontpage">Sākums</a>
 			<span aria-hidden="true" class="breadcrumb_sep">›</span>';
 			if(!empty($path)){
 				foreach($path as $tp){
@@ -235,7 +235,7 @@ function displayFilteredProducts($produkti, $tag, $title, $db){
 	} else {
 		echo '<div class="section-header section-header-breadcrumb">
 			<nav class="breadcrumb">
-				<a href="http://localhost/elliandhugo/" title="Back to frontpage">Home</a>
+				<a href="http://localhost/elliandhugo/" title="Back to frontpage">Sākums</a>
 				<span aria-hidden="true" class="breadcrumb_sep">›</span>';
 				if(!empty($path)){
 					foreach($path as $tp){

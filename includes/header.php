@@ -14,7 +14,7 @@
 <header class="site-header" role="banner">
 	<div id="drawer" class="wrapper">
 		<main>
-			<a href="#menu" class="box-shadow-menu" onclick="displayMenu()">Menu</a>
+			<a href="#menu" class="box-shadow-menu" onclick="displayMenu()">Izvēlne</a>
 		</main>
 		<nav id="menu_nav" data-show="false">
 			<li class="list"><a href="/elliandhugo"><p>Sākums</p></a></li>

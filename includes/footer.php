@@ -9,6 +9,6 @@
 	<h4>Atrodi mūs</h4>
 	
 	<h4>Kontakti</h4>
-	<p class="footer-bottom">Elli & Hugo <a href="mailto:kontakti@elliandhugo.lv"><small>kontakti@elliandhugo.lv</small></a></p>
-	<small>Copyright ©2016 Elli&Hugo</small>
+	<div class="footer-bottom"><p>Elli & Hugo</p> <a href="mailto:kontakti@elliandhugo.lv">kontakti@elliandhugo.lv</a></div>
+	<div class="copyright">Copyright ©2016 Elli&Hugo</div>
 </footer>

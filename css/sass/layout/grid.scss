@@ -2,9 +2,9 @@
     width: 90%;
     margin: 0 auto;
     padding-top: 1em;
+    color: dimgray;
     .produkti{
         width: 100%;
-        color: dimgray;
         font-size: 0.65em;
         .produkti-image{
             padding-bottom: 100%;
@@ -17,5 +17,9 @@
         .produkti-price{
             margin-bottom: 2em;
         }
+    }
+    .view-more{
+        font-size: 0.6em;
+        text-align: center;
     }
 }
