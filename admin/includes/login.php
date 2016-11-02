@@ -21,7 +21,8 @@
                 $id = $result[0]->ID;
                 
                 $_SESSION['id'] = $id;
-                header("Location: http://localhost/elliandhugo/admin/login.php");
+                //header("Location: http://localhost/elliandhugo/admin/login.php");
+                header("Location: http://localhost:8080/elliandhugo/admin/login.php");
                 die();
         }
 ?>
