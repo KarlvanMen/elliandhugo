@@ -40,13 +40,18 @@ window.onload = function() {
         var menuList = document.getElementsByClassName('list');
         for(var i = 0; i < menuList.length; i++){
                 if(menuList[i].childNodes.length > 1){
-                        menuList[i].childNodes[1].style.display = 'none';
-                        menuList[i].innerHTML += " +";
+                                var plus = "<span style='font-weight: 200; color: #666;'>+</span>";
+                        menuList[i].childNodes[2].style.display = 'none';
+                        menuList[i].childNodes[0].innerHTML += " " + plus;
                         menuList[i].onclick=function(){
-                                if (this.childNodes[1].style.display == 'none') {
-                                        this.childNodes[1].style.display = 'block';
+                                var plus = "<span style='font-weight: 200; color: #666;'>+</span>";
+                                var minus = "<span style='font-weight: 200; color: #666;'>-</span>";
+                                if (this.childNodes[2].style.display == 'none') {
+                                        this.childNodes[0].childNodes[1].innerHTML = minus;
+                                        this.childNodes[2].style.display = 'block';
                                 } else {
-                                        this.childNodes[1].style.display = 'none';
+                                        this.childNodes[0].childNodes[1].innerHTML = plus;       
+                                        this.childNodes[2].style.display = 'none';
                                 }
                         }
                 }
@@ -67,10 +72,8 @@ function displayMenu(){
         if (menu.dataset.show == 'true') {
                 menu.style.display = "none";
                 menu.dataset.show = 'false';
-                document.getElementById("drawer").style.minHeight = "auto";
         } else {
                 menu.style.display = "block";
                 menu.dataset.show = 'true';
-                document.getElementById("drawer").style.minHeight = "100vh";
         }
 }

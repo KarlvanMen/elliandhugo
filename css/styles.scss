@@ -1,8 +1,8 @@
 @import "sass/base/reset";
+@import "sass/base/typography";
+@import "sass/layout/header";
 @import "sass/layout/grid";
 @import "sass/layout/footer";
 @import "sass/layout/header";
 @import "sass/pages/singleproduct";
-
-.error {
-  padding: 15px 0; }
+@import "sass/pages/special";

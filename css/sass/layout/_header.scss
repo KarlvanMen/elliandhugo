@@ -1,0 +1,71 @@
+@import '../helpers/variables';
+.site-header{
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    .wrapper{
+        background-color: rgb(232, 230, 230);
+        main{
+            padding: 0.5em 1em;
+            .box-shadow-menu{
+                position: relative;
+                padding-left: 1.25em;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0.125em;
+                    width: 1em;
+                    height: 0.125em;
+                    background: black;
+                    box-shadow: 
+                        0 0.35em 0 0 black,
+                        0 0.75em 0 0 black;                    
+                }
+            }
+        }
+        nav{
+            text-transform: uppercase;
+            display: none;
+            .list{
+                list-style-type: none;
+                border-top: 1px solid #666;
+                font-size: 1.2em;
+                p{ 
+                    padding: 1em;
+                    margin: 0;
+                }
+                .sublist{
+                    margin: 0;
+                    padding: 0;
+                    .sublist-link{
+                        padding: 1em;
+                        border-top: 1px solid rgb(232, 230, 230);
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.logo{
+    min-width: 100%;
+    a{
+        min-width: 100%;
+        img{
+            width: 80%;
+            margin: 0 auto;
+            margin-left: 10%;
+            margin-top: 2em;
+            @media screen and (min-width: $tablet) {
+                width: 30%;
+                margin-left: 35%;
+            }
+        }
+        p{
+            margin: 0;
+            text-align: center;
+            font-size: 0.65em;
+        }
+    }
+}

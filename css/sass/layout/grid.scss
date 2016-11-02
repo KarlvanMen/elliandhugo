@@ -1,40 +1,36 @@
-.content {
-  line-height: 1.3;
-  max-width: 700px;
-  width: 90%;
-  margin: 0 auto 30px; 
-  .produkti {
-    color: dimgrey;
-    text-decoration: none;
-    background: transparent; 
-    &:hover {
-      color: #838383; 
+@import '../helpers/variables';
+.content{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 1em;
+    color: dimgray;
+    .produkti{
+        width: 100%;
+        font-size: 0.65em;
+        .produkti-image{
+            width: 100%;
+            padding-bottom: 100%;
+            background-size: cover;
+        }
+        p{
+            margin: 0;
+            margin-top: 0.5em;
+        }
+        .produkti-price{
+            margin-bottom: 2em;
+        }
+        @media screen and (min-width: $tablet) {
+            width: 30%;
+            margin-right: 5%;
+            display: inline-block;
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+            
+        }
     }
-    div.wider-image{
-      background-size: auto 100%; 
+    .view-more{
+        font-size: 0.6em;
+        text-align: center;
     }
-    .produkti-image {
-      max-width: 100%;
-      height: 0;
-      padding-top: 100%;
-      overflow: hidden;
-      transition: all 0.1s ease-in;
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-      background-position: center; 
-      &:hover {
-        opacity: 0.7; 
-      }
-    }
-  }
-  .view-more {
-    display: block;
-    clear: both;
-    font-size: 0.85em;
-    margin-top: 15px;
-    text-align: center; 
-    a {
-      width: 100vw; 
-    }
-  }
 }
