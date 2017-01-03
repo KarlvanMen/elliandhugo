@@ -8,7 +8,7 @@ if(isset($_SESSION['id'])){
     $title = $desc = $url = "";
     $colors = $size = $cat = $price = $img = array();
     $valid_formats = array("jpg", "png", "gif", "zip", "bmp");                        
-    $path = "../../img/";
+    $path = "../img/";
     if(!empty($_POST)){
 
         function test_input($data) {

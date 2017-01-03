@@ -18,7 +18,7 @@
         
         // Finally, destroy the session.
         session_destroy();
-        header("Location: http://karlismendzins.co.nf/elli&hugo/admin/login.php");
+        header("Location: http://elliandhugo.lv/testAdmin.php");
         die();
         
 ?>

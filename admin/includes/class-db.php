@@ -2,7 +2,7 @@
 if(!class_exists('DB')){
 	class DB{
 		public function __construct(){
-			$mysqli = new mysqli("sql7.freesqldatabase.com", "sql7135051", "AQH36ZkL4Z", "sql7135051", 3306);
+			$mysqli = new mysqli("localhost:3306", "MD1146", "Cl15-8pjwczy", "prodLV");
 			
 			if($mysqli->connect_errno){
 				printf("Connection failed %s");
